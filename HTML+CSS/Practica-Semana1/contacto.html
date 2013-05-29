@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta name ="description" content="Ejercicio practica 1 html">
+	<meta name="keywords" content="HTML, Escuela.it, practica, semana 1, formulario">
+	<meta named="author" content="Carlos García">
+	<meta charset="UTF-8">
+	<title>Formulario practica 1</title>
+</head>
+<body>
+	<form action="mailto:chars24@gmail.com" method="post" enctype="text/plain">
+		<fieldset>
+				<legend><b><ins>COMENTARIOS</ins></b></legend>
+
+			<p>
+				<label for="user">Nombre:</label>
+				<input id="user" type="text" name="nombre" maxlength="40" size="40" placeholder="Introduce tu nombre completo">
+			</p>
+
+			<p>
+				<label for="mail">Correo:</label>
+				<input id="mail" type="text" name="correo" maxlength="30" size="30" placeholder="Introduce tu correo electronico">
+			</p>
+
+			<p>
+				<label for="redes">De donde nos visitas:</label> 
+				<br>
+				Escuela.it <input type="checkbox" name="redes" value="Escuela.it" checked>
+				Facebook <input type="checkbox" name="redes" value="Facebook">
+				Google + <input type="checkbox" name="redes" value="Google">
+				Twitter <input type="checkbox" name="redes" value="Twitter">
+			</p>
+
+			<p>
+				<label for="country">De donde eres:</label>
+				<input id = "contry"type="radio" name="pais" value="mexico" checked> México
+				<input id="country" type="radio" name="pais" value="españa"> España
+				<input id="country" type="radio" name="pais" value="otro"> Otro
+			</p>
+
+			<p>
+				<label for="coment">Comentarios:</label>
+				<br>
+				<textarea id="coment" cols="12" rows"9" name="comentario" placeholder="Escribenos un comentario"></textarea>
+			</p>
+
+			<p>
+				<input type="submit" name="enviar" value="Enviar">
+				<input type="reset" value="Reset">
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>
